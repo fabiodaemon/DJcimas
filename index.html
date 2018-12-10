@@ -1,8 +1,10 @@
 <html>
 <head>
     <meta charset="utf-8">
+    
     <link rel="stylesheet" href="estilos/estilo.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="scripts/script.js"></script>
     <script>
     $(document).ready(function(){
       $("#inp").on("keyup", function() {
@@ -43,20 +45,60 @@
     
     </span><br><br><br><br><br><br>
     
-    <div class="eventos">
+     <section class="eventos">
         
-        <br><br><br>
-        <h1>EVENTOS  ♪</h1>
-        <span>
-            <img src="imagens/fotos/evento1.jpg">
-            <img src="imagens/fotos/evento2.jpg">
-            <img src="imagens/fotos/evento3.jpg">
-        </span>
+         <h1 class>EVENTOS  ♪</h1>
         
-    </div>
+          <div class="slideshow-container" style="active">
+
+           <div class="mySlides fade">
+              <div class="numbertext">1 / 6</div>
+              <img src="imagens/fotos/evento1.jpg" style="width:100%">
+           </div>
+
+           <div class="mySlides fade">
+              <div class="numbertext">2 / 6</div>
+              <img src="imagens/fotos/evento2.jpg" style="width:100%">
+           </div>
+
+           <div class="mySlides fade">
+              <div class="numbertext">3 / 6</div>
+              <img src="imagens/fotos/evento3.jpg" style="width:100%">
+           </div>
+
+           <div class="mySlides fade">
+              <div class="numbertext">4 / 6</div>
+              <img src="imagens/fotos/evento4.jpeg" style="width:100%">
+           </div>
+
+           <div class="mySlides fade">
+              <div class="numbertext">5 / 6</div>
+              <img src="imagens/fotos/evento5.jpeg" style="width:100%">
+           </div>
+
+           <div class="mySlides fade">
+              <div class="numbertext">6 / 6</div>
+              <img src="imagens/fotos/evento6.jpeg" style="width:100%">
+           </div>
+
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        </div><br>
+
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+          <span class="dot" onclick="currentSlide(5)"></span>
+          <span class="dot" onclick="currentSlide(6)"></span>   
+        </div>
+    
+    </section>
     
         <br><br><br>
-        <h1>AGENDA  ♪</h1>
+        <h1>AGENDA  ♪ </h1>
     
         <div class="agenda">
 
@@ -144,12 +186,13 @@
         <div class="contato">
             
             <h2>Agende seu evento comigo !</h2>
-            <a href="#"><img src="imagens/whatsapp1.png" class="social-media"></a>
+            <a href="https://api.whatsapp.com/send?phone=5521975201595&text=Olá DJ Renan, Gostaria de saber masi informações do seu trabalho! "><img src="imagens/whatsapp1.png" class="social-media"></a>
             <a href="#"><img src="imagens/whatsapp2.png" class="social-media"></a>
             
-        </div>
+        </div><br><br><br><br><br><br><br><br><br><br><br>
+    
+  
+    
 
-    
-    
 </body>
 </html>

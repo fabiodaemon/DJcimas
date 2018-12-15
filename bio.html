@@ -1,0 +1,208 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=B612+Mono" rel="stylesheet">
+    <link rel="stylesheet" href="estilos/estilo.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="scripts/script.js"></script>
+    <script>
+    $(document).ready(function(){
+      $("#inp").on("keyup", function() {
+        var value = $(this).val().toLowerCase();
+        $("#myTable tr").filter(function() {
+          $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+        });
+      });
+    });
+    </script>
+</head>
+<body onload="showSlides()">
+<header>
+    <nav>
+        <div class="logo fade">
+            <img class="img-logo" src="imagens/fotos/logo-new.png">
+       </div>
+    </nav>
+        <button class="arrow" onclick="reload(#profile)">➤</button>
+</header><br><br><br>
+    
+    <h1>BIO  ♪</h1>
+    <div class="rectangle" id="profile">
+        <img class="img-rectangle" src="imagens/fotos/renan2.jpg">
+    </div>
+    
+        <p><b>RENAN CIMAS</b><br><br><br>
+        Além de ser atuante em festas como: o Baile do Barra em Nova Iguaçu, Furduncinho do Dj Patrick Santos no Méier e ser residente Na festa Close de Caxias, o carioca é Dj há um ano e vem se destacando e buscando inovar no segmento de Pop, Funk e House em suas produções.Seus sets são recheados de música boa e viradas incríveis!<br>
+        <p>Confira mais do meu trabalho em minhas redes sociais</p>
+        
+    
+    <span>
+
+        <a href="https://api.whatsapp.com/send?phone=5521975201595&text=Olá DJ Renan, Gostaria de saber masi informações do seu trabalho! ">
+            <img class="social-media" src="imagens/whatsapp1.png" >
+        </a>
+        <a href="https://www.facebook.com/DjCimas/">
+           <img class="social-media" src="imagens/facebook-icon.png">
+        </a>
+        <a href="#">
+            <img class="social-media" src="imagens/instagram-icon.png">
+        </a>
+    
+    </span><br><br><br><br><br><br><br><br>
+    
+     <section class="eventos">
+        
+         <h1>EVENTOS  ♪</h1>
+        
+          <div class="slideshow-container" style="active">
+
+           <div class="mySlides fade">
+              <div class="numbertext">1 / 6</div>
+              <img src="imagens/fotos/evento1.jpg" style="width:100%">
+           </div>
+
+           <div class="mySlides fade">
+              <div class="numbertext">2 / 6</div>
+              <img src="imagens/fotos/evento2.jpg" style="width:100%">
+           </div>
+
+           <div class="mySlides fade">
+              <div class="numbertext">3 / 6</div>
+              <img src="imagens/fotos/evento3.jpg" style="width:100%">
+           </div>
+
+           <div class="mySlides fade">
+              <div class="numbertext">4 / 6</div>
+              <img src="imagens/fotos/evento4.jpeg" style="width:100%">
+           </div>
+
+           <div class="mySlides fade">
+              <div class="numbertext">5 / 6</div>
+              <img src="imagens/fotos/evento5.jpeg" style="width:100%">
+           </div>
+
+           <div class="mySlides fade">
+              <div class="numbertext">6 / 6</div>
+              <img src="imagens/fotos/evento6.jpeg" style="width:100%">
+           </div>
+
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        </div><br>
+
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+          <span class="dot" onclick="currentSlide(5)"></span>
+          <span class="dot" onclick="currentSlide(6)"></span>   
+        </div>
+    
+    </section>
+    <section>
+        <br><br><br>
+        <h1>AGENDA  ♪ </h1>
+    
+        <div class="agenda">
+
+        <label for="inp" class="inp">
+          <input type="text" id="inp" placeholder="&nbsp;">
+          <span class="label">Pesquisar...</span>
+          <span class="border"></span>
+        </label><br><br>
+
+        <div class="contato">
+            
+            <div class="rectangle2">
+                <img class="img-rectangle2" src="imagens/fotos/renan1.jpg">
+                <a href="#profile"><h3>Agende seu evento comigo!</h3></a>
+            </div>
+            
+        </div>    
+            
+            
+            
+        <table id="meses">
+            <thead>
+                <tr>
+                    <th>Mês</th>
+                    <th>Evento</th>
+                    <th>Local</th>
+                </tr>
+
+            </thead>
+
+            <tbody id="myTable">
+                <tr>
+
+                    <td>Jan</td>
+                    <td>Lorem</td>
+                    <td>RJ</td>
+                </tr>
+                <tr>
+                    <td>Fev</td>
+                    <td>Ipsum</td>
+                    <td>DQ</td>
+                </tr>
+                <tr>
+                    <td>Mar</td>
+                    <td>Ipsi</td>
+                    <td>RJ</td>
+                </tr>
+                    <td>Abr</td>
+                    <td>Yui</td>
+                    <td>DQ</td>
+                <tr>
+                    <td>Mai</td>
+                    <td>Fiza</td>
+                    <td>RJ</td>
+                </tr>
+                <tr>
+                    <td>Jun</td>
+                    <td>Fiza</td>
+                    <td>RJ</td>
+                </tr>
+                <tr>
+                    <td>Jul</td>
+                    <td>Fiza</td>
+                    <td>DQ</td>
+                </tr>
+                <tr>
+                    <td>Ago</td>
+                    <td>Fiza</td>
+                    <td>RJ</td>
+                </tr>
+                <tr>
+                    <td>Set</td>
+                    <td>Fiza</td>
+                    <td>Local</td>
+                </tr>
+                <tr>
+                    <td>Out</td>
+                    <td>Fiza</td>
+                    <td>DQ</td>
+                </tr>
+                <tr>
+                    <td>Nov</td>
+                    <td>Fiza</td>
+                    <td>RJ</td>
+                </tr>
+                <tr>
+                    <td>Dez</td>
+                    <td>Fiza</td>
+                    <td>DQ</td>
+                </tr>
+            </tbody>
+
+        </table>
+        </div> <br><br><br><br><br><br><br><br><br><br><br><br>
+    </section>
+
+</body>    
+<footer>
+    <a href="#"><h3>Desenvolvido por Fabio Daemon</h3></a>
+</footer>
+
+</html>

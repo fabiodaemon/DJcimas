@@ -391,7 +391,7 @@ footer{
 
 .dot-div{text-align:center;}
 
-@media only screen and (max-width:1000px) and (min-width: 501px) {
+@media only screen and (max-width:1000px) and (min-width: 701px) {
 /*   For tablets: */
     .rectangle2{display: none;}
     
@@ -404,7 +404,7 @@ footer{
     .eventos{height: 55%;}
 }
 
-@media only screen and (max-width:500px) {
+@media only screen and (max-width:700px) {
   /* For mobile phones: */
 
     h2{

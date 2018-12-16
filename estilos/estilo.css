@@ -80,7 +80,7 @@ body{
 
 .img-logo{
   
-  height: 40%;  
+  height: 35%;  
   overflow: hidden;
   display: block;
   margin-left: auto;
@@ -127,8 +127,11 @@ p{
 
 .social-media{
     filter: invert(100%);
-    width: 60px;
-    height: 60px;
+}
+
+.social-media img{
+    width: 5%;
+    height: 8%;
 }
 
 .eventos{
@@ -391,20 +394,10 @@ footer{
 
 .dot-div{text-align:center;}
 
-@media only screen and (max-width:1000px) and (min-width: 701px) {
-/*   For tablets: */
-    .rectangle2{display: none;}
-    
-    .img-rectangle2{display: none;}
-    
-    .slideshow-container{height: 80%; overflow: hidden;}
-    
-    .dot-div{display: none;}
-    
-    .eventos{height: 55%;}
-}
+#slideshow{display:none}
 
-@media only screen and (max-width:700px) {
+
+@media onlY screen and (max-width:700px) {
   /* For mobile phones: */
 
     h2{
@@ -415,21 +408,36 @@ footer{
     
     .social-media{margin-left: 40px;}
     
+    .social-media img{height: 10%;width: 10%}
+    
     .eventos{height: 35%;}
     
-    .slideshow-container{height: 80%; overflow: hidden;}
+    .slideshow-container .mySlides{height: 35%;overflow: hidden;}
     
-    .dot-div{display: none;}
+    .slideshow-container{overflow: hidden; height: 70%}
+    
+    .prev, .next {display: none;}
     
     .rectangle2{display: none;}
     
     .img-rectangle2{display: none;}
     
-    #meses{margin-bottom: 50px;}
+    .img-logo{height: 20%; width: 80%}
     
-    footer{margin-top: 100px;}
-    
-    .img-logo{height: 30%; width: 80%}
 }
 
+/*
+@media only screen and (max-width:1000px) and (min-width: 701px) {
+   For tablets: 
+    .rectangle2{display: none;}
+    
+    .img-rectangle2{display: none;}
+    
+    .slideshow-container{height: 80%; overflow: hidden;}
+    
+    .dot-div{display: none;}
+    
+    .eventos{height: 55%;}
+}
+*/
 

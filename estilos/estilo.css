@@ -398,6 +398,18 @@ footer{
 
 #slideshow{display:none}
 
+.flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.flex-container > div {
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
 
 @media onlY screen and (min-width:200px) and (max-width:1000px) {
   /* For mobile phones: */
@@ -432,19 +444,4 @@ footer{
 
     
 
-
-/*
-@media only screen and (max-width:1000px) and (min-width: 701px) {
-   For tablets: 
-    .rectangle2{display: none;}
-    
-    .img-rectangle2{display: none;}
-    
-    .slideshow-container{height: 80%; overflow: hidden;}
-    
-    .dot-div{display: none;}
-    
-    .eventos{height: 55%;}
-}
-*/
 

@@ -404,11 +404,12 @@ footer{
 }
 
 .flex-container > div {
-  width: 100px;
-  margin: 10px;
+  width: 90%;
+  margin: 0;
   text-align: center;
-  line-height: 75px;
+  line-height: 30%;
   font-size: 30px;
+  justify-content: center;
 }
 
 @media onlY screen and (min-width:200px) and (max-width:1000px) {

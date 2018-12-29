@@ -127,11 +127,7 @@ p{
 
 .social-media{
     filter: invert(100%);
-}
-
-.social-media img{
-    width: 3%;
-    height: 5%;
+    width: 1.5em;
 }
 
 .eventos{
@@ -420,10 +416,6 @@ footer{
     }
     
     .rectangle{margin-bottom: 15px;}
-    
-    .social-media{margin-left: 40px;}
-    
-    .social-media img{height: 5%;width: 5%;margin-left: 20px;;}
     
     .eventos{height: 35%;}
     
